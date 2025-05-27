@@ -34,6 +34,7 @@ bot.on('message', async(msg: Message) => {
             {reply_markup: {
                 keyboard: [[{text: '⚙️ Настройки',}], [{text: '✅ Подтвердить'}, {text: '❌ Отклонить'}]],
                 remove_keyboard: true,
+                resize_keyboard: true,
                 one_time_keyboard: true
             }}
         )
