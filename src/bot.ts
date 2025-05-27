@@ -52,5 +52,7 @@ bot.on('callback_query', async (query) => {
     }
     const chatId: number = query?.message?.chat.id;
 
+    await bot.answerCallbackQuery(query.id)
+
     await bot.sendMessage(chatId, `Вы нажали: ${data}`)
 })
