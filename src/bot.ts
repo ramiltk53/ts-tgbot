@@ -32,7 +32,7 @@ bot.on('message', async(msg: Message) => {
     if (Math.random() > 0.7) {
         await bot.sendMessage(chatId, "test reply keys", 
             {reply_markup: {
-                keyboard: [[{text: '1'}], [{text: '2'}]],
+                keyboard: [[{text: '⚙️ Настройки',}], [{text: '✅ Подтвердить'}, {text: '❌ Отклонить'}]],
                 remove_keyboard: true,
                 one_time_keyboard: true
             }}
